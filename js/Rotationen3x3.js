@@ -47,7 +47,7 @@ function draw()
    // clear();
 	
   t += PI / 36;
-  while(t > 8 * PI) { t -= 8 * PI; clear(); }
+  if(t > 8 * PI) { t -= 8 * PI; clear(); }
   
   	
   var dimension = min(width, height);
